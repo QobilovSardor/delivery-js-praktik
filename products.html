@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Delivery</title>
+</head>
+
+<body>
+	<!-- add-modal start -->
+	<div class="add-modal pf">
+		<div class="modal-wrap pr">
+			<button type="button" class="modal-close pa">
+				<img src="./images/clode-modal.svg" alt="">
+			</button>
+			<div class="df media-modal">
+				<!-- modal-left -->
+				<div class="modal-left mr15">
+					<div class="modal-img">
+						<img src="./images/modal-pizza.png" alt="">
+					</div>
+				</div>
+				<!-- modal-right -->
+				<div class="modal-right pr">
+					<div class="modal-about">
+						<h5 class="fw600 fs24">Пицца Четыре сыра</h5>
+						<p class="fw400 fs14">Состав: Тесто (20х30 см), сливочный соус, моцарелла, сыр с плесенью,
+							чеддер,
+							пармезан</p>
+					</div>
+					<div class="pizza-tools mt15">
+						<div class="tool-series">
+							<h5 class="fw400 fs14 db mb5 mt15">Размер</h5>
+							<div class="tool size-tool df ai-center">
+								<button class="fw400 fs14 size-click" type="button">Маленькая</button>
+								<button class="fw400 fs14" type="button">Средняя</button>
+								<button class="fw400 fs14" type="button">Большая</button>
+							</div>
+						</div>
+						<div class="tool-series dough-series">
+							<h5 class="fw400 fs14 db mt15">Тесто</h5>
+							<div class="tool dough-tool df ai-center">
+								<button class="fw400 fs14 dough-click" type="button">Традиционное</button>
+								<button class="fw400 fs14" type="button">Тонкое</button>
+							</div>
+						</div>
+						<div class="modal-price mt15">
+							<h5 class="fw400 fs14 db mb5 mt15">Добавить по вкусу</h5>
+							<div class="price-tools df jc-between">
+								<div class="price-card price-card-click df ai-center jc-center">
+									<h6 class="fw400 fs12 tac">Моцарелла</h6>
+									<div class="price-count df ai-center jc-between">
+										<div class="conunt-number df ai-center jc-between">
+											<span class="db ai-center fw400 fs20">&minus;</span> <span
+												class="db mr15 ml15 fs12 fw400">2</span> <span class="db ai-center fw400 fs20">&plus;</span>
+										</div>
+										<h5 class="price fw600 fs14">158₽</h5>
+									</div>
+								</div>
+								<div class="price-card df ai-center jc-center">
+									<h6 class="fw400 fs12 tac">Свежая пекинская капуста</h6>
+									<h5 class="price fw600 tac fs14">158₽</h5>
+								</div>
+								<div class="price-card df ai-center jc-center">
+									<h6 class="fw400 fs12 tac">Цыпленок</h6>
+									<h5 class="price fw600 tac fs14">79₽</h5>
+								</div>
+								<div class="price-card df ai-center jc-center">
+									<h6 class="fw400 fs12 tac">Ветчина</h6>
+									<div class="price-count df ai-center jc-between">
+										<div class="conunt-number df ai-center jc-between">
+											<span class="db ai-center fw400 fs20">&minus;</span> <span
+												class="db mr15 ml15 fs12 fw400">2</span> <span class="db ai-center fw400 fs20">&plus;</span>
+										</div>
+										<h5 class="price fw600 fs14">158₽</h5>
+									</div>
+								</div>
+								<div class="price-card df ai-center jc-center">
+									<h6 class="fw400 fs12 tac">Свежая пекинская капуста</h6>
+									<h5 class="price fw600 tac fs14">158₽</h5>
+								</div>
+								<div class="price-card df ai-center jc-center">
+									<h6 class="fw400 fs12 tac">Цыпленок</h6>
+									<h5 class="price fw600 tac fs14">79₽</h5>
+								</div>
+								<div class="price-card df ai-center jc-center">
+									<h6 class="fw400 fs12 tac">Моцарелла</h6>
+									<div class="price-count df ai-center jc-between">
+										<div class="conunt-number df ai-center jc-between">
+											<span class="db ai-center fw400 fs20">&minus;</span> <span
+												class="db mr15 ml15 fs12 fw400">2</span> <span class="db ai-center fw400 fs20">&plus;</span>
+										</div>
+										<h5 class="price fw600 fs14">158₽</h5>
+									</div>
+								</div>
+								<div class="price-card df ai-center jc-center">
+									<h6 class="fw400 fs12 tac">Свежая пекинская капуста</h6>
+									<h5 class="price fw600 tac fs14">158₽</h5>
+								</div>
+								<div class="price-card df ai-center jc-center">
+									<h6 class="fw400 fs12 tac">Цыпленок</h6>
+									<h5 class="price fw600 tac fs14">79₽</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- modal-bottom -->
+					<div class="modal-bottom pf df">
+						<div class="modal-bottom-left"></div>
+						<div class="modal-bottom-right">
+							<div class="modal-bottom-price">
+								<h5 class="fw600 mb15 df fs24">751₽ <span class="fw500 fs16 lh20 db">936₽</span></h5>
+							</div>
+							<div class="modal-bottom-btn df ai-center">
+								<button class="fw600 fs16 c-white" type="submit">Добавить</button>
+								<div class="modal-bottom-count df ai-center jc-between">
+									<span class="db fs20">&minus;</span>
+									<span class="fs12 fw500">1</span>
+									<span class="fs20 db">&plus;</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- add-modal end -->
+	<div class="wrapper">
+		<!-- header start -->
+		<header class="header">
+			<div class="container">
+				<div class="header-inner df ai-center jc-between">
+					<div class="header-logo__box df ai-center jc-between">
+						<div class="header-logo mr60">
+							<a href="#">
+								<img src="images/logo.svg" alt="">
+							</a>
+						</div>
+
+						<div class="header-search pr">
+							<img class="search-icon pa" src="images/seacrch-icon.svg" alt="">
+							<input type="text" placeholder="Найти ресторан или блюдо">
+							<button class="btn">Поиск</button>
+						</div>
+
+						<div class="header-location ml40">
+							<div class="btn df ai-center">
+								<svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M5.21251 12.0625H4.15751C4.07462 12.0625 3.99514 12.0954 3.93653 12.154C3.87793 12.2126 3.84501 12.2921 3.84501 12.375C3.84501 12.4579 3.87793 12.5374 3.93653 12.596C3.99514 12.6546 4.07462 12.6875 4.15751 12.6875H7.8425C7.92538 12.6875 8.00487 12.6546 8.06348 12.596C8.12208 12.5374 8.155 12.4579 8.155 12.375C8.155 12.2921 8.12208 12.2126 8.06348 12.154C8.00487 12.0954 7.92538 12.0625 7.8425 12.0625H6.78751C8.03751 10.855 10.815 7.905 10.815 5.74C10.815 2.955 8.65501 0.6875 6.00001 0.6875C3.34501 0.6875 1.18501 2.955 1.18501 5.75C1.18501 7.905 3.97001 10.855 5.21251 12.0625ZM6.00001 1.3125C8.31001 1.3125 10.19 3.3125 10.19 5.74C10.19 7.8775 6.87251 11.13 6.00001 11.95C5.12751 11.13 1.81001 7.8775 1.81001 5.75C1.81001 3.3 3.69001 1.3125 6.00001 1.3125Z"
+										fill="white" />
+									<path
+										d="M8.155 5.45999C8.155 5.03377 8.02861 4.61713 7.79182 4.26274C7.55502 3.90835 7.21846 3.63214 6.82469 3.46903C6.43091 3.30593 5.99761 3.26325 5.57958 3.3464C5.16155 3.42955 4.77757 3.6348 4.47619 3.93618C4.1748 4.23756 3.96956 4.62154 3.88641 5.03957C3.80326 5.4576 3.84593 5.8909 4.00904 6.28468C4.17215 6.67845 4.44836 7.01502 4.80275 7.25181C5.15714 7.48861 5.57378 7.61499 6 7.61499C6.57134 7.61433 7.11909 7.38708 7.52309 6.98308C7.92708 6.57908 8.15434 6.03133 8.155 5.45999ZM4.47 5.45999C4.47198 5.15782 4.56339 4.863 4.7327 4.61271C4.90202 4.36242 5.14165 4.16788 5.42139 4.05361C5.70113 3.93934 6.00844 3.91046 6.30457 3.97062C6.6007 4.03078 6.87239 4.17728 7.08536 4.39165C7.29834 4.60602 7.44306 4.87865 7.50129 5.17516C7.55952 5.47168 7.52865 5.7788 7.41256 6.05779C7.29647 6.33677 7.10036 6.57514 6.84898 6.74282C6.59759 6.9105 6.30218 6.99999 6 6.99999C5.79833 6.99967 5.5987 6.95954 5.41257 6.88191C5.22644 6.80428 5.05746 6.69067 4.91532 6.5476C4.77318 6.40453 4.66068 6.23482 4.58426 6.04818C4.50784 5.86155 4.46901 5.66166 4.47 5.45999Z"
+										fill="white" />
+									<path
+										d="M10.66 9.75C10.5934 9.70722 10.5131 9.6913 10.4352 9.70544C10.3574 9.71959 10.2878 9.76275 10.2405 9.82621C10.1932 9.88968 10.1718 9.96871 10.1805 10.0474C10.1892 10.126 10.2275 10.1984 10.2875 10.25C10.74 10.585 11.2875 11.14 11.2875 11.8725C11.2875 13.3975 8.87 14.6875 6.0075 14.6875C3.145 14.6875 0.720004 13.3975 0.720004 11.8725C0.720004 11.14 1.26 10.585 1.72 10.25C1.78004 10.1984 1.81829 10.126 1.82701 10.0474C1.83574 9.96871 1.8143 9.88968 1.76702 9.82621C1.71974 9.76275 1.65014 9.71959 1.57228 9.70544C1.49442 9.6913 1.41408 9.70722 1.3475 9.75C0.532504 10.3525 0.0975037 11.0875 0.0975037 11.875C0.0975037 13.805 2.69 15.315 6.0025 15.315C9.315 15.315 11.9075 13.815 11.9075 11.875C11.905 11.085 11.475 10.35 10.66 9.75Z"
+										fill="white" />
+								</svg>
+								<span class="ml10 fw400 fs14">Укажите адрес <span
+										class="media-hide__text-location">доставки</span></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="df ai-center">
+						<div class="header-language mr40 pr">
+							<div class="default-lagnuage tac">
+								<img class="global-icon" src="images/global-icon.svg" alt="">
+								<p class="fs14 fw400 media-hide__text">Русский</p>
+							</div>
+							<div class="header-language__box dn pa">
+								<ul>
+									<li class="fs14 fw400 df ai-center jc-between">
+										Русский
+										<img class="hide-language__icon active" src="images/check.svg" alt="">
+									</li>
+									<li class="fs14 fw400 df ai-center jc-between">
+										English
+										<img class="hide-language__icon" src="images/check.svg" alt="">
+									</li>
+									<li class="fs14 fw400 df ai-center jc-between">
+										Français
+										<img class="hide-language__icon" src="images/check.svg" alt="">
+									</li>
+									<li class="fs14 fw400 df ai-center jc-between">
+										қазақ
+										<img class="hide-language__icon" src="images/check.svg" alt="">
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="header-contact">
+							<a class="btn" href="#">Войти</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="menu">
+				<div class="container">
+					<div class="menu-icons df ai-center jc-between">
+						<a class="menu-icons__icon tac" href="#">
+							<img src="images/home-icon.svg" alt="">
+							<span class="fw600 fs10 db c-white mt10">Главная</span>
+						</a>
+						<a class="menu-icons__icon tac" href="#">
+							<img src="images/restauran-icon.svg" alt="">
+							<span class="fw600 fs10 db c-white mt10">Рестораны</span>
+						</a>
+						<a class="menu-icons__icon tac" href="#">
+							<img src="images/cart-icon.svg" alt="">
+							<span class="fw600 fs10 db c-white mt10">Корзина</span>
+						</a>
+						<a class="menu-icons__icon tac" href="#">
+							<img src="images/user-icon.svg" alt="">
+							<span class="fw600 fs10 db c-white mt10">Профиль</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+		<!-- main start -->
+		<main class="main">
+			<div class="container">
+				<!-- product series start -->
+				<div class="back-btn__box mb15">
+					<button class="back-btn fw400 fs16 df ai-center">
+						<svg class="mr10" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3 0L0 3L3 6L3.707 5.293L1.914 3.5H14V2.5H1.914L3.707 0.707L3 0Z" fill="#1E1E1E" />
+						</svg>
+						Все рестораны
+					</button>
+				</div>
+
+				<section class="sorting-bar">
+					<div class="container">
+						<div class="sorting-bar__content df ai-center jc-between">
+							<ul class="df">
+								<li>
+									<a class="sorting-bar__link fs14 fw600 c-white sorting-active" href="#">Все</a>
+								</li>
+								<li>
+									<a class="sorting-bar__link fs14 fw600 c-white" href="#">Навынос</a>
+								</li>
+								<li>
+									<a class="sorting-bar__link fs14 media-hide__text3 fw600 c-white" href="#">Пицца</a>
+								</li>
+								<li>
+									<a class="sorting-bar__link fs14 media-hide__text3 fw600 c-white" href="#">Грузия</a>
+								</li>
+								<li>
+									<a class="sorting-bar__link fs14 media-hide__text2 fw600 c-white" href="#">Бургеры</a>
+								</li>
+								<li>
+									<a class="sorting-bar__link fs14 media-hide__text2 fw600 c-white" href="#">Шашлык</a>
+								</li>
+								<li>
+									<a class="sorting-bar__link fs14 media-hide__text1 fw600 c-white" href="#">Десерты</a>
+								</li>
+								<li>
+									<a class="sorting-bar__link fs14 fw600 c-white df ai-center" href="#">
+										Еще
+										<svg class="ml10" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 1L7 7L13 1" stroke="white" stroke-width="0.5" stroke-linecap="round" />
+										</svg>
+									</a>
+				
+								</li>
+								<li>
+									<a class="sorting-bar__link fs14 media-hide__text1 fw600 c-white" href="#">Суши</a>
+								</li>
+								<li>
+									<a class="sorting-bar__link fs14 media-hide__text1 fw600 c-white" href="#">Суши</a>
+								</li>
+							</ul>
+							<div class="df jc-between">
+								<div class="pr">
+									<div class="select-box df ai-center">
+										<h4 class="mr5 fs14 fw500 c-white">Доставка: <span class="select-tme media-hide__time">сейчас</span>
+										</h4>
+										<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 1L7 7L13 1" stroke="white" stroke-width="0.5" stroke-linecap="round" />
+										</svg>
+									</div>
+									<div class="select-box__items pa dn">
+										<div class="select-box__items-header btn df">
+											<button class="select-box__btn active-btn">Сегодня</button>
+											<button class="select-box__btn ml15">Завтра</button>
+										</div>
+										<div class="select-box__items-info mt15">
+											<div class="select-box__list df ai-center jc-between">
+												<span class="fs14 fw400">Сейчас</span>
+												<img src="images/check.svg" alt="">
+											</div>
+											<div class="select-box__list df ai-center jc-between">
+												<span class="fs14 fw400">14:00</span>
+											</div>
+											<div class="select-box__list df ai-center jc-between">
+												<span class="fs14 fw400">15:00</span>
+											</div>
+											<div class="select-box__list df ai-center jc-between">
+												<span class="fs14 fw400">16:00</span>
+											</div>
+											<div class="select-box__list df ai-center jc-between">
+												<span class="fs14 fw400">17:00</span>
+											</div>
+											<div class="select-box__list df ai-center jc-between">
+												<span class="fs14 fw400">18:00</span>
+											</div>
+											<div class="select-box__list df ai-center jc-between">
+												<span class="fs14 fw400">19:00</span>
+											</div>
+											<div class="select-box__list df ai-center jc-between">
+												<span class="fs14 fw400">20:00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="pr">
+									<div class="setting-box df ai-center ml10">
+										<h4 class="mr5 fs14 fw500 c-white media-hide__text-setting">Сортировка</h4>
+										<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.625603 2.7H8.6V3.02C8.6 3.27461 8.70115 3.51879 8.88118 3.69882C9.06122 3.87886 9.3054 3.98 9.56 3.98H10.84C11.0946 3.98 11.3388 3.87886 11.5188 3.69882C11.6989 3.51879 11.8 3.27461 11.8 3.02V2.7H13.2912C13.3761 2.7 13.4575 2.66628 13.5175 2.60627C13.5775 2.54626 13.6112 2.46487 13.6112 2.38C13.6112 2.29513 13.5775 2.21374 13.5175 2.15372C13.4575 2.09371 13.3761 2.06 13.2912 2.06H11.8V1.74C11.8 1.48539 11.6989 1.24121 11.5188 1.06118C11.3388 0.881141 11.0946 0.779999 10.84 0.779999H9.56C9.3054 0.779999 9.06122 0.881141 8.88118 1.06118C8.70115 1.24121 8.6 1.48539 8.6 1.74V2.06H0.625603C0.540734 2.06 0.459341 2.09371 0.399329 2.15372C0.339317 2.21374 0.305603 2.29513 0.305603 2.38C0.305603 2.46487 0.339317 2.54626 0.399329 2.60627C0.459341 2.66628 0.540734 2.7 0.625603 2.7ZM9.24 1.74C9.24 1.65513 9.27372 1.57374 9.33373 1.51372C9.39374 1.45371 9.47513 1.42 9.56 1.42H10.84C10.9249 1.42 11.0063 1.45371 11.0663 1.51372C11.1263 1.57374 11.16 1.65513 11.16 1.74V3.02C11.16 3.10487 11.1263 3.18626 11.0663 3.24627C11.0063 3.30628 10.9249 3.34 10.84 3.34H9.56C9.47513 3.34 9.39374 3.30628 9.33373 3.24627C9.27372 3.18626 9.24 3.10487 9.24 3.02V1.74ZM13.336 12.3H10.52V11.98C10.52 11.7254 10.4189 11.4812 10.2388 11.3012C10.0588 11.1211 9.81461 11.02 9.56 11.02H8.28C8.02539 11.02 7.78122 11.1211 7.60118 11.3012C7.42115 11.4812 7.32 11.7254 7.32 11.98V12.3H0.632003C0.547134 12.3 0.465741 12.3337 0.405729 12.3937C0.345717 12.4537 0.312003 12.5351 0.312003 12.62C0.312003 12.7049 0.345717 12.7863 0.405729 12.8463C0.465741 12.9063 0.547134 12.94 0.632003 12.94H7.32V13.26C7.32 13.5146 7.42115 13.7588 7.60118 13.9388C7.78122 14.1189 8.02539 14.22 8.28 14.22H9.56C9.81461 14.22 10.0588 14.1189 10.2388 13.9388C10.4189 13.7588 10.52 13.5146 10.52 13.26V12.94H13.336C13.4209 12.94 13.5023 12.9063 13.5623 12.8463C13.6223 12.7863 13.656 12.7049 13.656 12.62C13.656 12.5351 13.6223 12.4537 13.5623 12.3937C13.5023 12.3337 13.4209 12.3 13.336 12.3ZM9.88 13.26C9.88 13.3449 9.84629 13.4263 9.78628 13.4863C9.72627 13.5463 9.64487 13.58 9.56 13.58H8.28C8.19513 13.58 8.11374 13.5463 8.05373 13.4863C7.99372 13.4263 7.96 13.3449 7.96 13.26V11.98C7.96 11.8951 7.99372 11.8137 8.05373 11.7537C8.11374 11.6937 8.19513 11.66 8.28 11.66H9.56C9.64487 11.66 9.72627 11.6937 9.78628 11.7537C9.84629 11.8137 9.88 11.8951 9.88 11.98V13.26ZM4.44 9.1H5.72C5.97461 9.1 6.21879 8.99886 6.39883 8.81882C6.57886 8.63879 6.68 8.39461 6.68 8.14V7.82H13.368C13.4529 7.82 13.5343 7.78628 13.5943 7.72627C13.6543 7.66626 13.688 7.58487 13.688 7.5C13.688 7.41513 13.6543 7.33374 13.5943 7.27372C13.5343 7.21371 13.4529 7.18 13.368 7.18H6.68V6.86C6.68 6.60539 6.57886 6.36121 6.39883 6.18118C6.21879 6.00114 5.97461 5.9 5.72 5.9H4.44C4.1854 5.9 3.94122 6.00114 3.76118 6.18118C3.58115 6.36121 3.48 6.60539 3.48 6.86V7.18H0.664003C0.579134 7.18 0.497741 7.21371 0.437729 7.27372C0.377717 7.33374 0.344003 7.41513 0.344003 7.5C0.344003 7.58487 0.377717 7.66626 0.437729 7.72627C0.497741 7.78628 0.579134 7.82 0.664003 7.82H3.48V8.14C3.48 8.39461 3.58115 8.63879 3.76118 8.81882C3.94122 8.99886 4.1854 9.1 4.44 9.1ZM4.12 6.86C4.12 6.77513 4.15372 6.69374 4.21373 6.63372C4.27374 6.57371 4.35513 6.54 4.44 6.54H5.72C5.80487 6.54 5.88627 6.57371 5.94628 6.63372C6.00629 6.69374 6.04 6.77513 6.04 6.86V8.14C6.04 8.22487 6.00629 8.30626 5.94628 8.36627C5.88627 8.42628 5.80487 8.46 5.72 8.46H4.44C4.35513 8.46 4.27374 8.42628 4.21373 8.36627C4.15372 8.30626 4.12 8.22487 4.12 8.14V6.86Z"
+												fill="white" />
+										</svg>
+									</div>
+									<div class="setting-box__items pa tal dn">
+										<h4 class="fs14 fw600">Сначала показать</h4>
+				
+										<div class="setting-box__item df ai-center mt15">
+											<input type="radio" name="radio" id="one">
+											<label class="ml10 fs14 fw400" for="one">Доверюсь вам</label>
+										</div>
+										<div class="setting-box__item df ai-center">
+											<input type="radio" name="radio" id="two">
+											<label class="ml10 fs14 fw400" for="two">С высоким рейтингом</label>
+										</div>
+										<div class="setting-box__item df ai-center">
+											<input type="radio" name="radio" id="three">
+											<label class="ml10 fs14 fw400" for="three">Недорогие</label>
+										</div>
+										<div class="setting-box__item df ai-center">
+											<input type="radio" name="radio" id="four">
+											<label class="ml10 fs14 fw400" for="four">Дорогие</label>
+										</div>
+										<div class="setting-box__item df ai-center">
+											<input type="radio" name="radio" id="five">
+											<label class="ml10 fs14 fw400" for="five">Быстрые</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="product pr">
+					<div class="row">
+						<!-- product-left sewries -->
+						<div class="col-lg-9 col-xl-9 col-md-9 col-sm-9 col-xs-12">
+							<!-- domin start -->
+							<div class="slider domin">
+								<div class="slider-buttons">
+									<button class="prev-btn">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="16px" height="16px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+											class="w-6 h-6">
+											<path stroke-linecap="round" stroke-linejoin="round"
+												d="M21 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953l7.108-4.062A1.125 1.125 0 0121 8.688v8.123zM11.25 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953L9.567 7.71a1.125 1.125 0 011.683.977v8.123z" />
+										</svg>
+									</button>
+									<div class="count">
+										<h1 class="current">1</h1>
+										<span>/</span>
+										<h3 class="total">4</h3>
+									</div>
+									<button class="next-btn">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="16px" height="16px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+											class="w-6 h-6">
+											<path stroke-linecap="round" stroke-linejoin="round"
+												d="M3 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062A1.125 1.125 0 013 16.81V8.688zM12.75 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062a1.125 1.125 0 01-1.683-.977V8.688z" />
+										</svg>
+									</button>
+								</div>
+								<div class="slider-wrapper">
+									<div class="slider-slide">
+										<div class="slider-img">
+											<img src="images/domin-bg.png" alt="">
+											<div class="slider-info">
+												<div class="domin-title">
+													<h4 class="c-white">Domino's Pizza</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slider-slide">
+										<div class="slider-img">
+											<img src="images/offer-img3.png" alt="">
+											<div class="slider-info">
+												<div class="domin-title">
+													<h4 class="c-white">Domino's Pizza</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slider-slide">
+										<div class="slider-img">
+											<img src="images/pizza-card-3.png" alt="">
+											<div class="slider-info">
+												<div class="domin-title">
+													<h4 class="c-white">Domino's Pizza</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slider-slide">
+										<div class="slider-img">
+											<img src="images/pizza-card-6.png" alt="">
+											<div class="slider-info">
+												<div class="domin-title">
+													<h4 class="c-white">Domino's Pizza</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-left col-lg-9 col-xl-9 col-md-9 col-sm-9 col-xs-9">
+							<!-- domin end -->
+							<div class="row mb25">
+								<div class="col-lg-12">
+									<div class="title">
+										<h1 class="title-text">Пицца</h1>
+									</div>
+								</div>
+							</div>
+
+							<!-- pizza series start -->
+							<section class="pizza mb40">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 col-6 mb20">
+										<div class="pizza-card">
+											<div class="pizza-card-img pr">
+												<div class="discount pa">
+													<div class="discount-series mb5 discount-series-1 df ai-center">
+														<div class="series-icon mr5 df ai-center">
+															<img src="./images/discount-icon.svg" alt="">
+														</div>
+														<p class="fw600 c-white">Скидка 20%</p>
+													</div>
+													<div class="discount-series discount-series-2 df ai-center">
+														<div class="series-icon mr5 df ai-center">
+															<img src="./images/icon-foiz.svg" alt="">
+														</div>
+														<p class="fw600 c-white">Выгодно</p>
+													</div>
+												</div>
+												<div class="cashback df ai-center pa">
+													<div class="series-icon mr5 df ai-center">
+														<img src="./images/icon-rubl.svg" alt="">
+													</div>
+													<p class="fw600 c-white">Кэшбэк 3%</p>
+												</div>
+												<img src="./images/pizza-card-4.png" alt="">
+											</div>
+											<div class="pizza-card-about">
+												<div class="price mt5">
+													<h6 class="lh20 df ai-center">751₽ <span class="fw500 fs12 db">936₽</span></h6>
+												</div>
+												<h6 class="fw400 lh16">Охотничья, Большая (33 см)</h6>
+												<button type="button" class="purchase fw500 c-white">Добавить</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 col-6 mb20">
+										<div class="pizza-card">
+											<div class="pizza-card-img pr">
+												<div class="discount pa">
+													<div class="discount-series mb5 discount-series-1 df ai-center">
+														<div class="series-icon mr5 df ai-center">
+															<img src="./images/discount-icon.svg" alt="">
+														</div>
+														<p class="fw600 c-white">Скидка 20%</p>
+													</div>
+												</div>
+												<div class="cashback df ai-center pa">
+													<div class="series-icon mr5 df ai-center">
+														<img src="./images/icon-rubl.svg" alt="">
+													</div>
+													<p class="fw600 c-white">Кэшбэк 3%</p>
+												</div>
+												<img src="./images/pizza-card-7.png" alt="">
+											</div>
+											<div class="pizza-card-about">
+												<div class="price mt5">
+													<h6 class="lh20 df ai-center">751₽ <span class="fw500 fs12 db">936₽</span></h6>
+												</div>
+												<h6 class="fw400 lh16">Охотничья, Большая (33 см)</h6>
+												<button type="button" class="purchase fw500 c-white">Добавить</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 col-6 mb20">
+										<div class="pizza-card">
+											<div class="pizza-card-img pr">
+												<div class="discount pa">
+													<div class="discount-series mb5 discount-series-1 df ai-center">
+														<div class="series-icon mr5 df ai-center">
+															<img src="./images/discount-icon.svg" alt="">
+														</div>
+														<p class="fw600 c-white">Скидка 20%</p>
+													</div>
+													<div class="discount-series discount-series-2 df ai-center">
+														<div class="series-icon mr5 df ai-center">
+															<img src="./images/icon-foiz.svg" alt="">
+														</div>
+														<p class="fw600 c-white">Выгодно</p>
+													</div>
+												</div>
+												<img src="./images/pizza-card-3.png" alt="">
+											</div>
+											<div class="pizza-card-about">
+												<div class="price mt5">
+													<h6 class="lh20 df ai-center">751₽ <span class="fw500 fs12 db">936₽</span></h6>
+												</div>
+												<h6 class="fw400 lh16">Охотничья, Большая (33 см)</h6>
+												<button type="button" class="fw500 purchase c-white">Добавить</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 col-6 mb20">
+										<div class="pizza-card">
+											<div class="pizza-card-img pr">
+												<div class="discount pa">
+													<div class="discount-series discount-series-2 df ai-center">
+														<div class="series-icon mr5 df ai-center">
+															<img src="./images/icon-foiz.svg" alt="">
+														</div>
+														<p class="fw600 c-white">Выгодно</p>
+													</div>
+												</div>
+												<div class="cashback df ai-center pa">
+													<div class="series-icon mr5 df ai-center">
+														<img src="./images/icon-rubl.svg" alt="">
+													</div>
+													<p class="fw600 c-white">Кэшбэк 3%</p>
+												</div>
+												<img src="./images/pizza-card-4.png" alt="">
+											</div>
+											<div class="pizza-card-about">
+												<div class="price mt5">
+													<h6 class="lh20 df ai-center">751₽ <span class="fw500 fs12 db">936₽</span></h6>
+												</div>
+												<h6 class="fw400 lh16">Охотничья, Большая (33 см)</h6>
+												<button type="button" class="fw500 purchase c-white">Добавить</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 col-6 mb20">
+										<div class="pizza-card">
+											<div class="pizza-card-img pr">
+												<div class="discount pa">
+													<div class="discount-series mb5 discount-series-1 df ai-center">
+														<div class="series-icon mr5 df ai-center">
+															<img src="./images/discount-icon.svg" alt="">
+														</div>
+														<p class="fw600 c-white">Скидка 20%</p>
+													</div>
+													<div class="discount-series discount-series-2 df ai-center">
+														<div class="series-icon mr5 df ai-center">
+															<img src="./images/icon-foiz.svg" alt="">
+														</div>
+														<p class="fw600 c-white">Выгодно</p>
+													</div>
+												</div>
+												<img src="./images/pizza-card-3.png" alt="">
+											</div>
+											<div class="pizza-card-about">
+												<div class="price mt5">
+													<h6 class="lh20 df ai-center">751₽ <span class="fw500 fs12 db">936₽</span></h6>
+												</div>
+												<h6 class="fw400 lh16">Охотничья, Большая (33 см)</h6>
+												<button type="button" class="fw500 purchase c-white">Добавить</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 col-6 mb20">
+										<div class="pizza-card">
+											<div class="pizza-card-img pr">
+												<div class="discount pa">
+													<div class="discount-series mb5 discount-series-1 df ai-center">
+														<div class="series-icon mr5 df ai-center">
+															<img src="./images/discount-icon.svg" alt="">
+														</div>
+														<p class="fw600 c-white">Скидка 20%</p>
+													</div>
+												</div>
+												<div class="cashback df ai-center pa">
+													<div class="series-icon mr5 df ai-center">
+														<img src="./images/icon-rubl.svg" alt="">
+													</div>
+													<p class="fw600 c-white">Кэшбэк 3%</p>
+												</div>
+												<img src="./images/pizza-card-6.png" alt="">
+											</div>
+											<div class="pizza-card-about">
+												<div class="price mt5">
+													<h6 class="lh20 df ai-center">751₽ <span class="fw500 fs12 db">936₽</span></h6>
+												</div>
+												<h6 class="fw400 lh16">Охотничья, Большая (33 см)</h6>
+												<button type="button" class="fw500 purchase c-white">Добавить</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 col-6 mb20">
+										<div class="pizza-card">
+											<div class="pizza-card-img pr">
+												<div class="discount pa">
+													<div class="discount-series discount-series-2 df ai-center">
+														<div class="series-icon mr5 df ai-center">
+															<img src="./images/icon-foiz.svg" alt="">
+														</div>
+														<p class="fw600 c-white">Выгодно</p>
+													</div>
+												</div>
+												<div class="cashback df ai-center pa">
+													<div class="series-icon mr5 df ai-center">
+														<img src="./images/icon-rubl.svg" alt="">
+													</div>
+													<p class="fw600 c-white">Кэшбэк 3%</p>
+												</div>
+												<img src="./images/pizza-card-7.png" alt="">
+											</div>
+											<div class="pizza-card-about">
+												<div class="price mt5">
+													<h6 class="lh20 df ai-center">751₽ <span class="fw500 fs12 db">936₽</span></h6>
+												</div>
+												<h6 class="fw400 lh16">Охотничья, Большая (33 см)</h6>
+												<button type="button" class="fw500 purchase c-white">Добавить</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 col-6 mb20">
+										<div class="pizza-card">
+											<div class="pizza-card-img pr">
+												<div class="discount pa">
+													<div class="discount-series discount-series-2 df ai-center">
+														<div class="series-icon mr5 df ai-center">
+															<img src="./images/icon-foiz.svg" alt="">
+														</div>
+														<p class="fw600 c-white">Выгодно</p>
+													</div>
+												</div>
+												<img src="./images/pizza-card-6.png" alt="">
+											</div>
+											<div class="pizza-card-about">
+												<div class="price mt5">
+													<h6 class="lh20 df ai-center">751₽ <span class="fw500 fs12 db">936₽</span></h6>
+												</div>
+												<h6 class="fw400 lh16">Охотничья, Большая (33 см)</h6>
+												<button type="button" class="fw500 purchase c-white">Добавить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- pizza series end -->
+							<!-- pizza series end -->
+						</div>
+						<!-- product-right -->
+						<div class="product-right pa col-lg-3 col-xl-3 col-md-3 col-sm-3 col-xs-3">
+							<div class="basket">
+								<h6 class="basket-title fw600 fs20 lh24">
+									Корзина
+								</h6>
+								<div class="basket-about tac">
+									<div class="empty">
+										<img src="./images/icon-empty.svg" alt="">
+									</div>
+									<p class="fw600 fs16 mt15 lh20">Ваша корзина пока пустая</p>
+								</div>
+								<!-- basket-bottom -->
+								<div class="basket-bottom">
+									<div class="basket-bottom-series df ai-center jc-between">
+										<div class="series mr10">
+											<div class="car">
+												<img src="./images/icon-basket-bottom.svg" alt="">
+											</div>
+										</div>
+										<div class="series">
+											<h6 class="fw400 fs12 lh13">Доставка 0 ₽ · 30–40 мин</h6>
+											<h6 class="fw300 fs12 lh12">Дальняя доставка · Работа сервиса 44 ₽
+												работа сервиса от 44 ₽</h6>
+										</div>
+										<div class="series ml20">
+											<div class="info">
+												<img src="./images/icon-info-2.svg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- product series end -->
+			</div>
+		</main>
+		<!-- main end -->
+
+		<!-- footer-series start -->
+		<footer class="footer df ai-center">
+			<div class="container">
+				<div class="footer-wrap">
+					<div class="mb20 footer-left">
+						<h6 class="fs16 fw600 footer_link_title_button">
+							Блюда и кухни
+							<span><img src="./images/bottom-arow-2.svg" alt=""></span>
+						</h6>
+						<div class="df media-footer">
+							<ul class="footer-series series-1">
+								<li><a href="#">Выпечка</a></li>
+								<li><a href="#">Блины</a></li>
+								<li><a href="#">Бургеры</a></li>
+								<li><a href="#">Чебуреки</a></li>
+								<li><a href="#">Кофе</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Фастуфут</a></li>
+								<li><a href="#">Грузинская кухня</a></li>
+								<li><a href="#">Хот-дог</a></li>
+							</ul>
+							<ul class="footer-series series-2">
+								<li><a href="#">Выпечка</a></li>
+								<li><a href="#">Блины</a></li>
+								<li><a href="#">Бургеры</a></li>
+								<li><a href="#">Чебуреки</a></li>
+								<li><a href="#">Кофе</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Фастуфут</a></li>
+								<li><a href="#">Грузинская кухня</a></li>
+								<li><a href="#">Хот-дог</a></li>
+							</ul>
+							<ul class="footer-series series-3">
+								<li><a href="#">Выпечка</a></li>
+								<li><a href="#">Блины</a></li>
+								<li><a href="#">Бургеры</a></li>
+								<li><a href="#">Чебуреки</a></li>
+								<li><a href="#">Кофе</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Фастуфут</a></li>
+								<li><a href="#">Грузинская кухня</a></li>
+								<li><a href="#">Хот-дог</a></li>
+							</ul>
+							<ul class="footer-series series-4">
+								<li><a href="#">Выпечка</a></li>
+								<li><a href="#">Блины</a></li>
+								<li><a href="#">Бургеры</a></li>
+								<li><a href="#">Чебуреки</a></li>
+								<li><a href="#">Кофе</a></li>
+								<li><a href="#">Десерты</a></li>
+								<li><a href="#">Фастуфут</a></li>
+								<li><a href="#">Грузинская кухня</a></li>
+								<li><a href="#">Хот-дог</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-right">
+						<div class="mb20">
+							<h6 class="fs16 footer-series-title df fw600 mb5">О компании <span><img src="./images/bottom-arow-2.svg"
+										alt=""></span></h6>
+							<ul class="footer-series series-5">
+								<li><a href="#">Пользовательское соглашение</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Стать партнером</a></li>
+								<li><a href="#">Стать курьером</a></li>
+							</ul>
+						</div>
+						<a href="#"><span><img src="./images/icon-email.svg" alt=""></span> Обратная связь</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer-series end -->
+
+	</div>
+	<!-- script section -->
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

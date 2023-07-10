@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Delivery</title>
+</head>
+
+<body>
+
+	<!-- header start -->
+	<header class="header">
+		<div class="container">
+			<div class="header-inner df ai-center jc-between">
+				<div class="header-logo__box df ai-center jc-between">
+					<div class="header-logo mr60">
+						<a href="#">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+
+					<div class="header-search pr">
+						<img class="search-icon pa" src="images/seacrch-icon.svg" alt="">
+						<input type="text" placeholder="Найти ресторан или блюдо">
+						<button class="btn">Поиск</button>
+					</div>
+
+					<div class="header-location ml40">
+						<div class="btn df ai-center">
+							<svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M5.21251 12.0625H4.15751C4.07462 12.0625 3.99514 12.0954 3.93653 12.154C3.87793 12.2126 3.84501 12.2921 3.84501 12.375C3.84501 12.4579 3.87793 12.5374 3.93653 12.596C3.99514 12.6546 4.07462 12.6875 4.15751 12.6875H7.8425C7.92538 12.6875 8.00487 12.6546 8.06348 12.596C8.12208 12.5374 8.155 12.4579 8.155 12.375C8.155 12.2921 8.12208 12.2126 8.06348 12.154C8.00487 12.0954 7.92538 12.0625 7.8425 12.0625H6.78751C8.03751 10.855 10.815 7.905 10.815 5.74C10.815 2.955 8.65501 0.6875 6.00001 0.6875C3.34501 0.6875 1.18501 2.955 1.18501 5.75C1.18501 7.905 3.97001 10.855 5.21251 12.0625ZM6.00001 1.3125C8.31001 1.3125 10.19 3.3125 10.19 5.74C10.19 7.8775 6.87251 11.13 6.00001 11.95C5.12751 11.13 1.81001 7.8775 1.81001 5.75C1.81001 3.3 3.69001 1.3125 6.00001 1.3125Z"
+									fill="white" />
+								<path
+									d="M8.155 5.45999C8.155 5.03377 8.02861 4.61713 7.79182 4.26274C7.55502 3.90835 7.21846 3.63214 6.82469 3.46903C6.43091 3.30593 5.99761 3.26325 5.57958 3.3464C5.16155 3.42955 4.77757 3.6348 4.47619 3.93618C4.1748 4.23756 3.96956 4.62154 3.88641 5.03957C3.80326 5.4576 3.84593 5.8909 4.00904 6.28468C4.17215 6.67845 4.44836 7.01502 4.80275 7.25181C5.15714 7.48861 5.57378 7.61499 6 7.61499C6.57134 7.61433 7.11909 7.38708 7.52309 6.98308C7.92708 6.57908 8.15434 6.03133 8.155 5.45999ZM4.47 5.45999C4.47198 5.15782 4.56339 4.863 4.7327 4.61271C4.90202 4.36242 5.14165 4.16788 5.42139 4.05361C5.70113 3.93934 6.00844 3.91046 6.30457 3.97062C6.6007 4.03078 6.87239 4.17728 7.08536 4.39165C7.29834 4.60602 7.44306 4.87865 7.50129 5.17516C7.55952 5.47168 7.52865 5.7788 7.41256 6.05779C7.29647 6.33677 7.10036 6.57514 6.84898 6.74282C6.59759 6.9105 6.30218 6.99999 6 6.99999C5.79833 6.99967 5.5987 6.95954 5.41257 6.88191C5.22644 6.80428 5.05746 6.69067 4.91532 6.5476C4.77318 6.40453 4.66068 6.23482 4.58426 6.04818C4.50784 5.86155 4.46901 5.66166 4.47 5.45999Z"
+									fill="white" />
+								<path
+									d="M10.66 9.75C10.5934 9.70722 10.5131 9.6913 10.4352 9.70544C10.3574 9.71959 10.2878 9.76275 10.2405 9.82621C10.1932 9.88968 10.1718 9.96871 10.1805 10.0474C10.1892 10.126 10.2275 10.1984 10.2875 10.25C10.74 10.585 11.2875 11.14 11.2875 11.8725C11.2875 13.3975 8.87 14.6875 6.0075 14.6875C3.145 14.6875 0.720004 13.3975 0.720004 11.8725C0.720004 11.14 1.26 10.585 1.72 10.25C1.78004 10.1984 1.81829 10.126 1.82701 10.0474C1.83574 9.96871 1.8143 9.88968 1.76702 9.82621C1.71974 9.76275 1.65014 9.71959 1.57228 9.70544C1.49442 9.6913 1.41408 9.70722 1.3475 9.75C0.532504 10.3525 0.0975037 11.0875 0.0975037 11.875C0.0975037 13.805 2.69 15.315 6.0025 15.315C9.315 15.315 11.9075 13.815 11.9075 11.875C11.905 11.085 11.475 10.35 10.66 9.75Z"
+									fill="white" />
+							</svg>
+							<span class="ml10 fw400 fs14">Укажите адрес <span class="media-hide__text-location">доставки</span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="df ai-center">
+					<div class="header-language mr40 pr">
+						<div class="default-lagnuage tac">
+							<img class="global-icon" src="images/global-icon.svg" alt="">
+							<p class="fs14 fw400 media-hide__text">Русский</p>
+						</div>
+						<div class="header-language__box dn pa">
+							<ul>
+								<li class="fs14 fw400 df ai-center jc-between">
+									Русский
+									<img class="hide-language__icon active" src="images/check.svg" alt="">
+								</li>
+								<li class="fs14 fw400 df ai-center jc-between">
+									English
+									<img class="hide-language__icon" src="images/check.svg" alt="">
+								</li>
+								<li class="fs14 fw400 df ai-center jc-between">
+									Français
+									<img class="hide-language__icon" src="images/check.svg" alt="">
+								</li>
+								<li class="fs14 fw400 df ai-center jc-between">
+									қазақ
+									<img class="hide-language__icon" src="images/check.svg" alt="">
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="header-contact">
+						<a class="btn" href="#">Войти</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu">
+			<div class="container">
+				<div class="menu-icons df ai-center jc-between">
+					<a class="menu-icons__icon tac" href="#">
+						<img src="images/home-icon.svg" alt="">
+						<span class="fw600 fs10 db c-white mt10">Главная</span>
+					</a>
+					<a class="menu-icons__icon tac" href="#">
+						<img src="images/restauran-icon.svg" alt="">
+						<span class="fw600 fs10 db c-white mt10">Рестораны</span>
+					</a>
+					<a class="menu-icons__icon tac" href="#">
+						<img src="images/cart-icon.svg" alt="">
+						<span class="fw600 fs10 db c-white mt10">Корзина</span>
+					</a>
+					<a class="menu-icons__icon tac" href="#">
+						<img src="images/user-icon.svg" alt="">
+						<span class="fw600 fs10 db c-white mt10">Профиль</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+
+	<main class="main">
+
+
+
+		<section id="domin">
+			<div class="container">
+				<div class="back-btn__box mb40">
+					<button class="back-btn fw400 fs16 df ai-center">
+						<svg class="mr10" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3 0L0 3L3 6L3.707 5.293L1.914 3.5H14V2.5H1.914L3.707 0.707L3 0Z" fill="#1E1E1E" />
+						</svg>
+						Назад
+					</button>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title">
+							<h1 class="title-text">Domino's Pizza</h1>
+						</div>
+					</div>
+				</div>
+				<div class="domin mt30">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="domin-left">
+								<div class="terms">
+									<div class="terms-title">
+										<h4 class="fw600 fs24">Условия доставки</h4>
+									</div>
+									<div class="terms-users df">
+										<div class="user">
+											<h4 class="fw500 fs16 lh20">Доставка</h4>
+											<h4 class="fw500 fs16 lh20">0₽</h4>
+										</div>
+										<div class=" user other-user">
+											<h4 class="fw500 fs16 lh20">Другому человеку</h4>
+											<h4 class="fw500 fs16 lh20">0₽</h4>
+										</div>
+									</div>
+									<div class="location-dropdown pr">
+										<p class="location df ai-center fw500 fs16"><span class="location-icon df ai-center">
+												<img src="./images/location.svg" alt="">
+											</span>
+											<span class="location-content">Ленинградская, 275/19, 15</span>
+											<span class="arrow-down-icon df ai-center"><img src="./images/arrow-down.svg" alt=""></span>
+										</p>
+										<ul class="location-menu pa">
+											<li class="fs14 fw400 df ai-center jc-between">Добавить адрес <span><img src="./images/plus.svg"
+														alt=""></span></li>
+											<li class="fs14 df ai-center jc-between fw400">Ленинградская, 275/19, 15
+												<span><img src="./images/nice.svg" alt=""></span>
+											</li>
+											<li class="fs14 df ai-center jc-between fw400">Большая Садовая, 34а,
+											</li>
+											<li class="fs14 df ai-center jc-between fw400">переулок Семашко, 21/60
+											</li>
+											<li class="fs14 df ai-center jc-between fw400">50 лет НМЛК, 33а</li>
+										</ul>
+									</div>
+									<div class="filling">
+										<div class="filling-series df ai-center jc-between">
+											<div class="series">
+												<input class="fs14 fw400" type="text" placeholder="Кв./офис">
+											</div>
+											<div class="series">
+												<input class="fs14 fw400" type="text" placeholder="Домофон">
+											</div>
+											<div class="series">
+												<input class="fs14 fw400" type="text" placeholder="Подъезд">
+											</div>
+											<div class="series">
+												<input class="fs14 fw400" type="text" placeholder="Этаж">
+											</div>
+										</div>
+										<input type="text" placeholder="Комментарий к заказу">
+									</div>
+									<div class="terms-title mt40">
+										<h4 class="fw600 fs24">Время доставки</h4>
+									</div>
+									<div class="time-dropworn pr">
+										<p class="time df ai-center">
+											<span class="car-icon db"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.86375 0.705933H4.13625L4.34407 0.187495C4.37688 0.10437 4.45782 0.0496826 4.54532 0.0496826H7.45469C7.54219 0.0496826 7.62313 0.10437 7.65594 0.187495L7.86375 0.705933ZM10.7972 6.38687C10.7819 6.20312 10.7578 6.01937 10.7206 5.83781C10.6681 5.57531 10.3859 5.41999 10.1366 5.51406L8.59438 6.09812C8.14157 6.26875 8.28594 6.96875 8.77157 6.9425L10.3838 6.85937C10.442 6.85573 10.499 6.8406 10.5513 6.81483C10.6037 6.78907 10.6505 6.75318 10.6889 6.70926C10.7274 6.66533 10.7567 6.61422 10.7753 6.55889C10.7939 6.50356 10.8013 6.44509 10.7972 6.38687ZM4.21938 8.20031H7.78063C8.06282 8.20031 8.06282 7.76281 7.78063 7.76281H4.21938C3.93719 7.76281 3.93719 8.20031 4.21938 8.20031ZM0.531254 6.76312C0.531254 6.00209 0.693129 5.24937 1.00594 4.55834L1.08469 4.38553L0.631879 4.09678C0.600872 4.07717 0.575365 4.05 0.557761 4.01781C0.540156 3.98563 0.531034 3.94949 0.531254 3.91281V3.72468C0.531254 3.60437 0.629691 3.50593 0.750004 3.50593H1.49813C1.66657 3.17125 1.85688 2.8475 2.07125 2.53906L2.73407 1.605C2.83513 1.46234 2.96891 1.34599 3.12419 1.26569C3.27948 1.18538 3.45174 1.14346 3.62657 1.14343H8.37344C8.72782 1.14343 9.0625 1.31625 9.26594 1.605L9.92875 2.53906C10.1431 2.8475 10.3334 3.17125 10.5019 3.50593H11.25C11.3703 3.50593 11.4688 3.60437 11.4688 3.72468V3.91281C11.4688 3.98718 11.4316 4.05718 11.3681 4.09656L10.9153 4.38531L10.9941 4.55812C11.3072 5.25104 11.469 6.00274 11.4688 6.76312V8.41906C11.4688 8.53937 11.3703 8.63781 11.25 8.63781H0.750004C0.629691 8.63781 0.531254 8.53937 0.531254 8.41906V6.76312ZM1.20282 6.38687C1.19866 6.4451 1.20608 6.50358 1.22465 6.55892C1.24323 6.61427 1.27258 6.66538 1.31102 6.70932C1.34947 6.75325 1.39623 6.78913 1.44862 6.81489C1.50101 6.84064 1.55799 6.85576 1.61625 6.85937L3.22844 6.9425C3.71188 6.96875 3.86063 6.26875 3.40563 6.09812L1.86344 5.51406C1.61407 5.41999 1.33188 5.57531 1.27938 5.83781C1.24219 6.01937 1.21813 6.20312 1.20282 6.38687ZM10.0775 4.26281L8.55282 2.11031C8.51125 2.05343 8.44563 2.01843 8.37344 2.01843H3.62657C3.55438 2.01843 3.48875 2.05343 3.44719 2.11031L1.9225 4.26281H10.0775ZM2.28125 9.07531V9.73156C2.28125 9.85187 2.18282 9.95031 2.0625 9.95031H1.1875C1.06719 9.95031 0.968754 9.85187 0.968754 9.73156V9.07531H2.28125ZM11.0313 9.07531V9.73156C11.0313 9.85187 10.9328 9.95031 10.8125 9.95031H9.9375C9.81719 9.95031 9.71875 9.85187 9.71875 9.73156V9.07531H11.0313Z"
+														fill="#000" />
+												</svg>
+											</span>
+											<span class="time-content db">Сегодня, 15:35 (30-40 минут)</span>
+											<span class="arrow-down-icon df ai-center">
+												<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 1L7 7L13 1" stroke="#1E1E1E" stroke-linecap="round" />
+												</svg>
+											</span>
+										</p>
+										<div class="select-box__items pa dn">
+											<div class="select-box__items-header btn df">
+												<button class="select-box__btn active-btn">Сегодня</button>
+												<button class="select-box__btn ml15">Завтра</button>
+											</div>
+											<div class="select-box__items-info mt15">
+												<div class="select-box__list df ai-center jc-between">
+													<span class="fs14 fw400">Сейчас</span>
+													<img src="images/check.svg" alt="">
+												</div>
+												<div class="select-box__list df ai-center jc-between">
+													<span class="fs14 fw400">14:00</span>
+												</div>
+												<div class="select-box__list df ai-center jc-between">
+													<span class="fs14 fw400">15:00</span>
+												</div>
+												<div class="select-box__list df ai-center jc-between">
+													<span class="fs14 fw400">16:00</span>
+												</div>
+												<div class="select-box__list df ai-center jc-between">
+													<span class="fs14 fw400">17:00</span>
+												</div>
+												<div class="select-box__list df ai-center jc-between">
+													<span class="fs14 fw400">18:00</span>
+												</div>
+												<div class="select-box__list df ai-center jc-between">
+													<span class="fs14 fw400">19:00</span>
+												</div>
+												<div class="select-box__list df ai-center jc-between">
+													<span class="fs14 fw400">20:00</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="order mt30">
+								<div class="terms-title">
+									<h4 class="fw600 fs24">Ваш заказ</h4>
+								</div>
+								<div class="equipment df ai-center jc-between mt25">
+									<button type="button" class="equipment-btn df ai-center fw500 fs14">
+										<span class="db"><img src="./images/dish.svg" alt=""></span>
+										Положить приборы
+									</button>
+									<div class="equipment-count dn">
+										<div class="df ai-center">
+											<span class="db df ai-center"><img src="./images/minus.svg" alt=""></span>
+											<span class="db count-number ml30 mr30">1</span>
+											<span class="db df ai-center"><img src="./images/plus.svg" alt=""></span>
+										</div>
+									</div>
+									<div></div>
+								</div>
+								<div class="backet-series mt25">
+									<div class="backet-card mb25 df ai-center jc-between">
+										<div class="backet-card-about df ai-center">
+											<div class="card-img">
+												<img src="./images/piza-img.png" alt="">
+											</div>
+											<div class="about-content ml15">
+												<h6 class="fw400 fs16 mb5">Маргарита Гурме, Маленькая (20 см)</h6>
+												<h5 class="fw400 fs14">Классическое Классический борт</h5>
+											</div>
+										</div>
+										<div class="backet-card-count df ai-center">
+											<span class="db df ai-center"><img src="./images/minus.svg" alt=""></span>
+											<span class="db count-number ml30 mr30">1</span>
+											<span class="db df ai-center"><img src="./images/plus.svg" alt=""></span>
+										</div>
+										<div class="backet-card-price df ai-end jc-center">
+											<h3 class="fw500 fs12 lh15">936₽</h3>
+											<h5 class="fw500 fs24 lh30">287₽</h5>
+										</div>
+									</div>
+									<div class="backet-card mb25 df ai-center jc-between">
+										<div class="backet-card-about df ai-center">
+											<div class="card-img">
+												<img src="./images/piza-img.png" alt="">
+											</div>
+											<div class="about-content ml15">
+												<h6 class="fw400 fs16 mb5">Маргарита Гурме, Маленькая (20 см)</h6>
+												<h5 class="fw400 fs14">Классическое Классический борт</h5>
+											</div>
+										</div>
+										<div class="backet-card-count df ai-center">
+											<span class="db df ai-center"><img src="./images/minus.svg" alt=""></span>
+											<span class="db count-number ml30 mr30">1</span>
+											<span class="db df ai-center"><img src="./images/plus.svg" alt=""></span>
+										</div>
+										<div class="backet-card-price df ai-end jc-center">
+											<h3 class="fw500 fs12 lh15">936₽</h3>
+											<h5 class="fw500 fs24 lh30">287₽</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="domin-right">
+								<div class="oplata-title mb30">
+									<h4 class="fw600 fs24 lh30">Способ оплаты</h4>
+								</div>
+								<div class="oplata-card pb25 df ai-center jc-between">
+									<div class="karta df ai-center">
+										<img src="./images/karta.svg" alt="">
+										<span class=" ml5 fw500 db fs16 lh20
+                                        ">•• 7169</span>
+									</div>
+									<div class="edit-karta pr">
+										<button class="fs14 fw500 lh15 edit-karta-btn" type="button">Изменить</button>
+										<div class="setting-box__items pa tal">
+											<h4 class="fs24 fw600 df ai-center jc-between">Способ оплаты <span
+													class="karta-close df ai-center"><img src="./images/clode-modal.svg" alt=""></span></h4>
+
+											<div class="mb10 setting-box__item df ai-center mt15">
+												<input type="radio" name="radio" id="one">
+												<label class=" df ai-center ml10 fs16 fw500" for="one"><span class="mr5 df ai-center"><img
+															src="./images/karta.svg" alt=""></span> •• 7169</label>
+											</div>
+											<div class="mb10 setting-box__item df ai-center">
+												<input type="radio" name="radio" id="two">
+												<label class=" df ai-center ml10 fs16 fw500" for="two"><span class="mr5 df ai-center"><img
+															src="./images/mir.svg" alt=""></span>•• 7169</label>
+											</div>
+											<div class="mb10 setting-box__item df ai-center">
+												<input type="radio" name="radio" id="three">
+												<label class=" df ai-center ml10 fs16 fw500" for="three"><span class="mr5 df ai-center"><img
+															src="./images/cbr.svg" alt=""></span>СБП</label>
+											</div>
+											<div class="mb10 setting-box__item df ai-center">
+												<input type="radio" name="radio" id="four">
+												<label class=" df ai-center ml10 fs16 fw500" for="four">Привязать новую
+													карту</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="total pb25 mt25">
+									<div class="total-title mb15">
+										<h4 class="fw600 fs20">Итого</h4>
+									</div>
+									<div class="total-series mb15 df ai-center jc-between">
+										<h3 class="fw500 fs16 lh20">Стоимость товаров</h3>
+										<h4 class="fw600 fs16 lh20">713₽</h4>
+									</div>
+									<div class="total-series mb15 df ai-center jc-between">
+										<h3 class="fw500 fs16 lh20">Доставка</h3>
+										<h4 class="fw600 fs16 lh20">0₽</h4>
+									</div>
+									<div class="total-series df ai-center jc-between">
+										<h3 class="fw500 fs16 lh20">Работа сервиса</h3>
+										<h4 class="fw600 fs16 lh20">44₽</h4>
+									</div>
+								</div>
+								<div class="promo mt25">
+									<div class="promo-title mb15">
+										<h5 class="fw500 fs16 lh20">У меня есть промокод</h5>
+									</div>
+									<div class="promo-series pb25 df ai-center jc-between">
+										<h4 class="fw500 fs16 lh20">Списать баллы</h4>
+										<div class="click-turn pr">
+											<div class="radius pa"></div>
+										</div>
+									</div>
+									<div class="credited mb30 mt25 df ai-center jc-between">
+										<h3 class="fw500 fs16 lh20">Вам начислится</h3>
+										<h3 class="fw500 fs16 lh20">Вам начислится</h3>
+									</div>
+									<div class="oplata-btn df ai-center jc-between">
+										<button type="button" class="fw600 fs14 lh15 c-white">Оплатить</button>
+										<h5 class="fw600 fs20 lh25">757₽</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- footer-series start -->
+	<footer class="footer df ai-center">
+		<div class="container">
+			<div class="footer-wrap">
+				<div class="mb20 footer-left">
+					<h6 class="fs16 fw600 footer_link_title_button">
+						Блюда и кухни
+						<span><img src="./images/arrow-down.svg" alt=""></span>
+					</h6>
+					<div class="df media-footer">
+						<ul class="footer-series series-1">
+							<li><a href="#">Выпечка</a></li>
+							<li><a href="#">Блины</a></li>
+							<li><a href="#">Бургеры</a></li>
+							<li><a href="#">Чебуреки</a></li>
+							<li><a href="#">Кофе</a></li>
+							<li><a href="#">Десерты</a></li>
+							<li><a href="#">Фастуфут</a></li>
+							<li><a href="#">Грузинская кухня</a></li>
+							<li><a href="#">Хот-дог</a></li>
+						</ul>
+						<ul class="footer-series series-2">
+							<li><a href="#">Выпечка</a></li>
+							<li><a href="#">Блины</a></li>
+							<li><a href="#">Бургеры</a></li>
+							<li><a href="#">Чебуреки</a></li>
+							<li><a href="#">Кофе</a></li>
+							<li><a href="#">Десерты</a></li>
+							<li><a href="#">Фастуфут</a></li>
+							<li><a href="#">Грузинская кухня</a></li>
+							<li><a href="#">Хот-дог</a></li>
+						</ul>
+						<ul class="footer-series series-3">
+							<li><a href="#">Выпечка</a></li>
+							<li><a href="#">Блины</a></li>
+							<li><a href="#">Бургеры</a></li>
+							<li><a href="#">Чебуреки</a></li>
+							<li><a href="#">Кофе</a></li>
+							<li><a href="#">Десерты</a></li>
+							<li><a href="#">Фастуфут</a></li>
+							<li><a href="#">Грузинская кухня</a></li>
+							<li><a href="#">Хот-дог</a></li>
+						</ul>
+						<ul class="footer-series series-4">
+							<li><a href="#">Выпечка</a></li>
+							<li><a href="#">Блины</a></li>
+							<li><a href="#">Бургеры</a></li>
+							<li><a href="#">Чебуреки</a></li>
+							<li><a href="#">Кофе</a></li>
+							<li><a href="#">Десерты</a></li>
+							<li><a href="#">Фастуфут</a></li>
+							<li><a href="#">Грузинская кухня</a></li>
+							<li><a href="#">Хот-дог</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-right">
+					<div class="mb20">
+						<h6 class="fs16 footer-series-title df fw600 mb5">О компании <span><img src="./images/arrow-down.svg"
+									alt=""></span></h6>
+						<ul class="footer-series series-5">
+							<li><a href="#">Пользовательское соглашение</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Стать партнером</a></li>
+							<li><a href="#">Стать курьером</a></li>
+						</ul>
+					</div>
+					<a href="#"><span><img src="./images/icon-email.svg" alt=""></span> Обратная связь</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer-series end -->
+	<!-- script section -->
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
