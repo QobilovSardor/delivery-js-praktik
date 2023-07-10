@@ -9,43 +9,40 @@ window.addEventListener('DOMContentLoaded', () => {
 		current = document.querySelector('.current'),
 		total = document.querySelector('.total');
 
-	let slideIndex = 1,
-		count = 1;
-	showSlides(slideIndex)
-
-	if (sliders.length < 10) {
+	let sliderIndex = 1;
+	showSlider(sliderIndex);
+	if(sliders.length < 10) {
 		total.textContent = `0${sliders.length}`
 	} else {
 		total.textContent = sliders.length
 	}
-
-	function showSlides(idx) {
-		if (idx > sliders.length) {
-			slideIndex = 1;
-		} else if (idx < 1) {
-			slideIndex = sliders.length;
+	function showSlider(idx) {
+		if(idx > sliders.length) {
+			sliderIndex = 1;
+		} else if(idx < 1) {
+			sliderIndex = sliders.length
 		}
-		sliders.forEach(item => item.style.display = 'none');
-		sliders[slideIndex - 1].style.display = 'block';
-
+		console.log(sliderIndex);
+		sliders.forEach(slider => slider.style.display = 'none');
+		sliders[sliderIndex - 1].style.display = 'block';
 		if (sliders.length < 10) {
-			current.textContent = `0${slideIndex}`
+			current.textContent = `0${sliderIndex}`
 		} else {
-			current.textContent = slideIndex
+			current.textContent = sliderIndex
 		}
 	}
 
-	function plusSlide(idx) {
-		showSlides(slideIndex += idx);
+	function plusSlider(idx){
+		showSlider(sliderIndex += idx)
 	}
 
 	next.addEventListener('click', () => {
-		plusSlide(1)
-	})
-	prev.addEventListener('click', () => {
-		plusSlide(-1)
+		plusSlider(1)
 	})
 
+	prev.addEventListener('click', () => {
+		plusSlider(-1)
+	})
 	// Tab section
 
 	// Modal section
