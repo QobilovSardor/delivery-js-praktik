@@ -7,42 +7,64 @@ window.addEventListener('DOMContentLoaded', () => {
 		prev = document.querySelector('.prev-btn'),
 		next = document.querySelector('.next-btn'),
 		current = document.querySelector('.current'),
-		total = document.querySelector('.total');
+		total = document.querySelector('.total'),
+		wrapper = document.querySelector(".slider-wrapper"),
+		width = window.getComputedStyle(wrapper).width,
+		sliderInner = document.querySelector('.slider-inner');
 
-	let sliderIndex = 1;
-	showSlider(sliderIndex);
-	if(sliders.length < 10) {
-		total.textContent = `0${sliders.length}`
-	} else {
-		total.textContent = sliders.length
-	}
-	function showSlider(idx) {
-		if(idx > sliders.length) {
-			sliderIndex = 1;
-		} else if(idx < 1) {
-			sliderIndex = sliders.length
-		}
-		console.log(sliderIndex);
-		sliders.forEach(slider => slider.style.display = 'none');
-		sliders[sliderIndex - 1].style.display = 'block';
+	sliderInner.style.display = "flex";
+	sliderInner.style.width = 100 * sliders.length + '%';
+	sliders.forEach(item => {
+		item.style.width = width
+	})
+	let sliderIndex = 1,
+		offset = 0;
+	function totalCount() {
 		if (sliders.length < 10) {
+			total.textContent = `0${sliders.length}`
 			current.textContent = `0${sliderIndex}`
 		} else {
+			total.textContent = sliders.length
 			current.textContent = sliderIndex
 		}
 	}
-
-	function plusSlider(idx){
-		showSlider(sliderIndex += idx)
-	}
+	totalCount()
 
 	next.addEventListener('click', () => {
-		plusSlider(1)
+		if (offset == +width.slice(0, width.length - 2) * (sliders.length - 1)) {
+			offset = 0;
+		} else {
+			offset += +width.slice(0, width.length - 2)
+		}
+
+		if (sliderIndex == sliders.length) {
+			sliderIndex = 1;
+		} else {
+			sliderIndex++
+		}
+		totalCount()
+		sliderInner.style.transform = `translateX(-${offset}px)`
+		console.log(current);
+		console.log(sliderIndex);
 	})
 
 	prev.addEventListener('click', () => {
-		plusSlider(-1)
+		if (offset == 0) {
+			offset = +width.slice(0, width.length - 2) * (sliders.length - 1)
+		} else {
+			offset -= +width.slice(0, width.length - 2)
+		}
+
+		sliderInner.style.transform = `translateX(-${offset}px)`
+
+		if (sliderIndex == 1) {
+			sliderIndex = sliders.length;
+		} else {
+			sliderIndex--
+		}
+		totalCount()
 	})
+
 	// Tab section
 
 	// Modal section
@@ -53,3 +75,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	// Form section
 })
+

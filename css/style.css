@@ -995,10 +995,21 @@ input::-webkit-inner-spin-button {
 .domin .slider-img{
 	position: relative;
 }
-/* .domin .slider-wrapper{
-	display: flex;
+.domin .slider-wrapper {
 	overflow: hidden;
-} */
+}
+.domin .slider-inner {
+	transition: all 0.3s linear;
+}
+.domin .slider-img img{
+	width: 100%;
+	object-fit: cover;
+	background: red;
+}
+.domin .slider-slide{
+	height: 300px;
+	width: 100%;
+}
 .domin .slider-info{
 	position: absolute;
 	bottom: 30px;
