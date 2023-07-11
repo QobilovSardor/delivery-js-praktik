@@ -30,6 +30,23 @@ window.addEventListener('DOMContentLoaded', () => {
 	}
 	totalCount()
 
+	// dots
+	const indecators = document.createElement('div'),
+		dots = [];
+	indecators.classList.add('slider-indicators');
+	wrapper.append(indecators);
+
+	for(let i = 0; i < sliders.length; i++) {
+		const dot = document.createElement('button')
+		dot.setAttribute('data-slider-dot', i + 1)
+		if (i == 0) { dot.classList.add('active') }
+		indecators.append(dot);
+		dots.push(dot)
+	}
+	function activeDots() {
+		dots.forEach(item => item.classList.remove('active'));
+		dots[sliderIndex - 1].classList.add('active');
+	}
 	next.addEventListener('click', () => {
 		if (offset == +width.slice(0, width.length - 2) * (sliders.length - 1)) {
 			offset = 0;
@@ -41,11 +58,10 @@ window.addEventListener('DOMContentLoaded', () => {
 			sliderIndex = 1;
 		} else {
 			sliderIndex++
-		}
+		}	
 		totalCount()
-		sliderInner.style.transform = `translateX(-${offset}px)`
-		console.log(current);
-		console.log(sliderIndex);
+		sliderInner.style.transform = `translateX(-${offset}px)`;
+		activeDots()
 	})
 
 	prev.addEventListener('click', () => {
@@ -63,6 +79,19 @@ window.addEventListener('DOMContentLoaded', () => {
 			sliderIndex--
 		}
 		totalCount()
+		activeDots()
+	})
+
+	dots.forEach(dot => {
+		dot.addEventListener('click', (e) => {
+			const slideDot = e.target.getAttribute('data-slider-dot');
+			sliderIndex = slideDot;
+			offset = +width.slice(0, width.length - 2) * (slideDot - 1)
+			sliderInner.style.transform = `translateX(-${offset}px)`;
+			activeDots();
+			totalCount()
+			
+		})
 	})
 
 	// Tab section

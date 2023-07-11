@@ -997,6 +997,7 @@ input::-webkit-inner-spin-button {
 }
 .domin .slider-wrapper {
 	overflow: hidden;
+	position: relative;
 }
 .domin .slider-inner {
 	transition: all 0.3s linear;
@@ -2432,3 +2433,27 @@ footer .footer-wrap .footer-right .footer-series-title span {
 }
 
 /* products html media edn */
+
+
+
+/* js code */
+.slider-indicators {
+	display: flex;
+	gap: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.slider-indicators button {
+	border-radius:  50%;
+	width: 20px;
+	height: 20px;
+	background: #cdcdcd;
+	border: none;
+	text-align: center;
+}
+.slider-indicators button.active{
+	transform: scale(1.1);
+	background: #666;
+}
